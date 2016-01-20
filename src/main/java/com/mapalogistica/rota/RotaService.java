@@ -15,8 +15,7 @@ public class RotaService {
 
 
 	@Transactional
-	public CustoRota getCustoRota(String origem, String destino, Double autonomia, Double precoCombustivel) {
-		
+	public CustoRota getCustoRota(String origem, String destino, Double autonomia, Double precoCombustivel) {		
 		MelhorCaminho melhorCaminho  = distanciaRepository.getMelhorCaminho(origem, destino);			
 		if(melhorCaminho != null){
 			CustoRota custoRota = new CustoRota();
