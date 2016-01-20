@@ -6,7 +6,17 @@ public class CustoRota {
 	
 	private Double totalPrecoCombustivel;
 	private Double menorDistanciaKm;
+	private String caminho;
 	
+	
+	public String getCaminho() {
+		return caminho;
+	}
+
+	public void setCaminho(String caminho) {
+		this.caminho = caminho;
+	}
+
 	public Double getTotalPrecoCombustivel() {
 		return totalPrecoCombustivel;
 	}
